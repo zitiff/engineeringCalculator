@@ -23,7 +23,7 @@ class ASTNode {
 
     void print(std::ostream &out) const;
 
-  private:
+  protected:
     void inner_print(std::ostream &out, size_t indent) const;
 
     std::string repr_;

@@ -1,5 +1,6 @@
 #include "parser.hpp"
 #include "number.hpp"
+#include "add.hpp"
 #include "variable.hpp"
 
 using Token = Lexer::Token;
@@ -18,7 +19,7 @@ ASTNode *Parser::expr() {
             switch (op.front()) {
             case '+':
                 // Implement Add class and uncomment this line
-                // root = new Add(root, term());
+                root = new Add(root, term());
                 return nullptr;
                 break;
             case '-':
